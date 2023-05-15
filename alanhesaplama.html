@@ -1,0 +1,24 @@
+<DOCTYPE! HTML>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>AlanHesaplama</title>
+    </head>
+    <body>
+        <h1>Alan Hesaplama</h1>
+        <h3> Yarıcapı : <span id="r"></span> </h3 >
+        <h3>Yüksekligi : <span id="h"></span> </h3>
+        <h3>Sonuc : <span id="sonuc"></span> </h3>
+        <script>
+
+            var ycap = parseInt(prompt("Yarıçapı Girin: "));
+            var yukseklik = parseInt(prompt("Yükseklik Girin: "));
+            var pi = 3.14;
+            var sonuc = 1 / 3 * pi * ycap * ycap * yukseklik;
+
+            document.getElementById('r').innerHTML = ycap;
+            document.getElementById('h').innerHTML = yukseklik;
+            document.getElementById('sonuc').innerHTML = sonuc;
+        </script>
+    </body>
+</html>
